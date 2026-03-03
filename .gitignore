@@ -1,1 +1,17 @@
 /target
+# Rust
+/target
+Cargo.lock
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Local config testing artifacts
+/journey_terminal_config_test/
