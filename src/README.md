@@ -4,16 +4,15 @@ Journey Terminal helps you customize your terminal in a clean, safe, and reversi
 
 It’s for people who want their terminal to look and behave exactly how they like — without breaking things, digging through random dotfiles, or pasting mystery config from the internet.
 
-This project starts as a CLI tool.
-A GUI will come later.
-
+Journey Terminal is currently CLI-first.  
+A GUI will be built on top of the same core engine.
 ---
 
 ## What Is It?
 
 Journey Terminal is a tool that:
 
-- Lets you apply terminal “profiles” (themes, prompts, toolsets)
+- Is built to manage terminal “profiles” safely and transparently
 - Keeps your changes organized and easy to undo
 - Works across Linux, macOS, and Windows (eventually)
 - Avoids messy, hard-to-maintain dotfile edits
@@ -46,7 +45,7 @@ You should always know:
 
 Right now:
 
-- Detects your platform
+- Detects your platform and shows where Journey Terminal stores its configuration directory and file.
 - Sets up a clean configuration directory
 - Lays the groundwork for profiles and safe configuration
 
@@ -95,3 +94,10 @@ Run:
 
 ```bash
 cargo run -- doctor
+
+### `config init`
+
+Creates a versioned configuration file safely.
+
+```bash
+cargo run -- config init
